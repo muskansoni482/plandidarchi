@@ -1,0 +1,418 @@
+import { createTheme } from "@mui/material/styles";
+
+export const sideBarOptions = [
+  {
+    alt: "DashBoard_Icon",
+    heading: "Dashboard",
+    link: `/dashboard`,
+  },
+  {
+    alt: "Client_Icon",
+    heading: "Client Management",
+    link: `/2`,
+  },
+  {
+    alt: "Photo_Icon",
+    heading: "Photographer Management",
+    link: `/3`,
+  },
+  {
+    alt: "Ques_Icon",
+    heading: "Questionnaire Management",
+    link: `/4`,
+  },
+  {
+    alt: "Manage_Icon",
+    heading: "Manage Categories",
+    link: `/5`,
+  },
+  {
+    alt: "Earn_Icon",
+    heading: "Earnings & Transactions Management",
+    link: `/6`,
+  },
+  {
+    alt: "Review_Icon",
+    heading: "Review & Ratings Management",
+    link: `/7`,
+  },
+  {
+    alt: "Reward_Icon",
+    heading: "Rewards Program",
+    link: `/8`,
+  },
+  {
+    alt: "Report_Icon",
+    heading: "Reports & Analytics",
+    link: `/9`,
+  },
+  {
+    alt: "Noti_Icon",
+    heading: "Notifications Management",
+    link: `/10`,
+  },
+  {
+    alt: "Content_Icon",
+    heading: "Manage Content",
+    link: `/11`,
+  },
+];
+
+export const ClientData = [
+  {
+    client_id: "1",
+    booking_count: 13,
+    client_name: "Prabhat",
+    city: "Varanasi",
+    client_email: "abc@gmail.com",
+    joined_on: new Date("February 28, 2023 10:20:40"),
+    account_type: "Indivisual",
+    block_status: 1,
+    images_count: 10,
+    account_status: "Pending",
+  },
+  {
+    client_id: "2",
+    booking_count: 5,
+    client_name: "Prabhat",
+    city: "Ghaziabad",
+    client_email: "cda@gmail.com",
+    joined_on: new Date("February 28, 2022 10:20:40"),
+    account_type: "Indivisual",
+    block_status: 0,
+    images_count: 15,
+    account_status: "Verified",
+  },
+  {
+    client_id: "3",
+    booking_count: 10,
+    client_name: "Prabhat",
+    city: "Lucknow",
+    client_email: "bcytdy@gmail.com",
+    joined_on: new Date("February 28, 2022 10:20:40"),
+    account_type: "Indivisual",
+    block_status: 1,
+    images_count: 8,
+    account_status: "Rejected",
+  },
+  {
+    client_id: "4",
+    booking_count: 4,
+    client_name: "Prabhat",
+    city: "Prayagraj",
+    client_email: "cghchch@gmail.com",
+    joined_on: new Date("February 28, 2022 10:20:40"),
+    account_type: "Indivisual",
+    block_status: 0,
+    images_count: 18,
+    account_status: "Pending",
+  },
+  {
+    client_id: "5",
+    booking_count: 6,
+    client_name: "ADITYA",
+    city: "Ramnagar",
+    client_email: "abc@gmail.com",
+    joined_on: new Date("February 28, 2022 10:20:40"),
+    account_type: "Business",
+    block_status: 0,
+    images_count: 19,
+    account_status: "Verified",
+  },
+
+  {
+    client_id: "6",
+    booking_count: 15,
+    client_name: "HIMANSHU",
+    city: "Bihar",
+    client_email: "bcchgfhgf@gmail.com",
+    joined_on: new Date("June 28, 2022 10:20:40"),
+    account_type: "Business",
+    block_status: 0,
+    images_count: 11,
+    account_status: "Verified",
+  },
+  {
+    client_id: "7",
+    booking_count: 10,
+    client_name: "HIMANSHU",
+    city: "Ara",
+    client_email: "abcghhfhc@gmail.com",
+    joined_on: new Date("June 28, 2022 10:20:40"),
+    account_type: "Business",
+    block_status: 0,
+    images_count: 7,
+    account_status: "Rejected",
+  },
+  {
+    client_id: "8",
+    booking_count: 12,
+    client_name: "HIMANSHU",
+    city: "Mirzapur",
+    client_email: "abc@gmail.com",
+    joined_on: new Date("June 28, 2022 10:20:40"),
+    account_type: "Business",
+    block_status: 1,
+    images_count: 19,
+    account_status: "Verified",
+  },
+  {
+    client_id: "9",
+    booking_count: 12,
+    client_name: "HIMANSHU",
+    city: "Jabalpur",
+    client_email: "ajhfgujhfjbc@gmail.com",
+    joined_on: new Date("June 28, 2022 10:20:40"),
+    account_type: "Business",
+    block_status: 1,
+    images_count: 9,
+    account_status: "Rejected",
+  },
+  {
+    client_id: "10",
+    booking_count: 4,
+    client_name: "RAM",
+    city: "Delhi",
+    client_email: "abcghchcdhc@gmail.com", // joined_on: moment("11-05-2023"),
+    joined_on: new Date("January 19, 2021 04:20"),
+    account_type: "Indivisual",
+    block_status: 1,
+    images_count: 19,
+    account_status: "Pending",
+  },
+  {
+    client_id: "12",
+    booking_count: 8,
+    client_name: "MOHAN",
+    city: "Agra",
+    client_email: "abcgjgjguy@gmail.com",
+    joined_on: new Date("February 28, 2022 10:20:40"),
+    account_type: "Business",
+    block_status: 0,
+    images_count: 19,
+    account_status: "Pending",
+  },
+  {
+    client_id: "13",
+    booking_count: 8,
+    client_name: "Zebra",
+    city: "Noida",
+    client_email: "adgdtbc@gmail.com",
+    joined_on: new Date("August 30, 2021 03:15:30"),
+    account_type: "Business",
+    block_status: 1,
+    images_count: 6,
+    account_status: "Pending",
+  },
+];
+
+export const BlockedClient = [
+  {
+    client_id: "1",
+    booking_count: 13,
+    client_name: "Prabhat",
+    city: "Varanasi",
+    client_email: "abc@gmail.com",
+    joined_on: new Date("February 28, 2023 10:20:40"),
+    account_type: "Indivisual",
+    block_status: 1,
+    images_count: 10,
+    account_status: "Pending",
+  },
+  {
+    client_id: "13",
+    booking_count: 8,
+    client_name: "Zebra",
+    city: "Noida",
+    client_email: "adgdtbc@gmail.com",
+    joined_on: new Date("August 30, 2021 03:15:30"),
+    account_type: "Business",
+    block_status: 1,
+    images_count: 6,
+    account_status: "Pending",
+  },
+  {
+    client_id: "10",
+    booking_count: 4,
+    client_name: "RAM",
+    city: "Delhi",
+    client_email: "abcghchcdhc@gmail.com", // joined_on: moment("11-05-2023"),
+    joined_on: new Date("January 19, 2021 04:20"),
+    account_type: "Indivisual",
+    block_status: 1,
+    images_count: 19,
+    account_status: "Pending",
+  },
+];
+export const ClientColumn = [
+  {
+    name: "Client Name",
+    sort: true,
+    sortKey: "name",
+    key: "client_name",
+  },
+  {
+    name: "Client Email",
+    sort: true,
+    sortKey: "email",
+    key: "client_email",
+  },
+  {
+    name: "Joined on",
+    sort: true,
+    sortKey: "date",
+    key: "joined_on",
+  },
+  {
+    name: "City",
+    sort: true,
+    sortKey: "city",
+    key: "city",
+  },
+  {
+    name: "Account Type",
+    sort: false,
+    key: "account_type",
+  },
+  {
+    name: "Booking made",
+    sort: false,
+    key: "booking_count",
+  },
+];
+
+export const PhotographerColumn = [
+  {
+    name: "Photographer Name",
+    sort: true,
+    sortKey: "name",
+    key: "client_name",
+  },
+  {
+    name: "Photographer Email",
+    sort: true,
+    sortKey: "email",
+    key: "client_email",
+  },
+  {
+    name: "Joined on",
+    sort: true,
+    sortKey: "date",
+    key: "joined_on",
+  },
+  {
+    name: "City",
+    sort: true,
+    sortKey: "city",
+    key: "city",
+  },
+  {
+    name: "Account Type",
+    sort: false,
+    key: "account_type",
+  },
+  {
+    name: "Booking made",
+    sort: false,
+    key: "booking_count",
+  },
+];
+
+export const ClientColumn2 = [
+  {
+    name: "Client Name",
+    sort: true,
+    sortKey: "name",
+    key: "client_name",
+  },
+  {
+    name: "Client Email",
+    sort: true,
+    sortKey: "email",
+    key: "client_email",
+  },
+  {
+    name: "Joined on",
+    sort: true,
+    sortKey: "date",
+    key: "joined_on",
+  },
+  {
+    name: "City",
+    sort: true,
+    sortKey: "city",
+    key: "city",
+  },
+  {
+    name: "Account Type",
+    sort: false,
+    key: "account_type",
+  },
+];
+
+export const ClientColumn3 = [
+  {
+    name: "Profile Name",
+    sort: true,
+    sortKey: "name",
+    key: "client_name",
+  },
+  {
+    name: "Client Email",
+    sort: true,
+    sortKey: "email",
+    key: "client_email",
+  },
+  {
+    name: "Joined on",
+    sort: true,
+    sortKey: "date",
+    key: "joined_on",
+  },
+  {
+    name: "City",
+    sort: true,
+    sortKey: "city",
+    key: "city",
+  },
+  {
+    name: "Total images",
+    sort: false,
+    key: "images_count",
+  },
+  {
+    name: "Account status",
+    sort: false,
+    key: "account_status",
+  },
+];
+
+export const THEME = createTheme({
+  typography: {
+    fontSize: 12,
+  },
+});
+
+export const ActionList1 = ["View", "Delete", "Block"];
+export const ActionList2 = ["View", "Delete", "Block"];
+export const ActionList3 = [
+  "View",
+  "Delete",
+  // edit: "Edit",
+  // "Unblock",
+  // active: "Active",
+  // inactive: "In-Active",
+  // resend: "Resend",
+];
+export const colorCode = {
+  sideBarBackground: "#bababa",
+  selectedColor: "#333333",
+  default: "#FFFFFF",
+  itemBackground: "#8b8b8b",
+  iconBackground: "#EFF5FC",
+  actionBtnColor: "#525863",
+  rejectedColor: "#FF0000",
+  verifiedColor: "#00BF63",
+  lineSeparatorColor: "#C4C4C4",
+  selectedBoxColor: "#202121",
+};
